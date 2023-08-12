@@ -1,77 +1,209 @@
 <!DOCTYPE html>
-<html>
-  <!-- Beggining HEAD -->
-  <head>
-    <title>Rodrigo Calegari</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style/style.css">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="flavicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="flavicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="flavicons/favicon-16x16.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <!-- End HEAD -->
-  <!-- Beggining Body -->
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">
-        <img class="rounded-circle"
-          src="https://avatars.githubusercontent.com/u/52531634?s=400&u=1ff89205c0c49e24da14fc7ba1887e4f763374cb&v=4"
-          width=6%/>
-          Rodrigo M Calegari
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" align="rigth">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodrigo Milan Calegari - Portfolio</title>
+  <!-- Add links to Bootstrap and Font Awesome CSS files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #2d3436; /* Dark gray background */
+      color: #dfe6e9; /* Light gray text color */
+    }
+    .navbar {
+      background-color: #2c3e50; /* Dark blue navbar */
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #dfe6e9;
+    }
+    .navbar-dark .navbar-toggler-icon {
+      background-color: #dfe6e9;
+    }
+    .section-header {
+      color: #e74c3c; /* Red section header */
+    }
+    .card {
+      background-color: #333; /* Dark gray card background */
+      border-color: #222; /* Slightly darker border color */
+    }
+    .card-title {
+      color: #f39c12; /* Yellow title color */
+    }
+    .btn-primary {
+      background-color: #e74c3c;
+      border-color: #e74c3c;
+    }
+    .btn-primary:hover {
+      background-color: #c0392b; /* Darker red on hover */
+      border-color: #c0392b;
+    }
+    .social-btn {
+      display: inline-block;
+      margin: 5px;
+    }
+    .social-logo {
+      background-color: #dfe6e9;
+      color: #2d3436;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-content {
+      padding: 20px;
+    }
+    .about-text {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rodrigo Milan Calegari</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Me
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/publications">Publications</a>
-              <a class="dropdown-item" href="/cv">CV</a>
-            </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
           </li>
-          <a class="nav-link" aria-current="page" href="/contact">Contact</a>
-          <a class="nav-link" aria-current="page" href="/projects">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
-    </nav>
-
-    <div class="container">
-      <br/>
-      <h1 class="meeting">Hey, my name is Rodrigo.</h1>
-      <br/>
-      <p>I'm a biology student who also loves technology and code.<br/>
-        I've experience with Bioinformatics and Genomics, working three years in this area as an ungraduate reaseacher at LAGENPE
-        at UNESP (São Paulo State University) in Brazil. During this time a learn to code, and became really good at it, I start to love it,
-        and I really like to develop new things to help the others, feel free to see my CV or to contact me.
-      </p>
     </div>
+  </nav>
 
-  </body>
-  <!-- End Body -->
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-content">
+            <h2 class="display-4 section-header">About Me</h2>
+            <p class="about-text">
+              Hello! I'm Rodrigo Milan Calegari, a passionate Machine Learning Engineer on a journey to unravel complex challenges and fuel innovation.
+            </p>
+            <p class="about-text">
+              With a background in Biological Sciences, I transitioned into the dynamic world of technology and machine learning. My expertise includes crafting advanced models with TensorFlow and PyTorch, orchestrating computer vision solutions with OpenCV, and architecting MLOps pipelines for streamlined workflows.
+            </p>
+            <p class="about-text">
+              My mission is to bridge science and technology, addressing profound challenges and contributing to pioneering projects. Let's connect and explore the possibilities together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="display-4 text-center section-header">Projects</h2>
+      <div id="project-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Description of Project 1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Description of Project 2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">Description of Project 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="row">
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="project4.jpg" class="card-img-top" alt="Project 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Data Analysis Toolkit</h5>
+                    <p class="card-text">Created a comprehensive toolkit for exploratory data analysis and visualization.</p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="project5.jpg" class="card-img-top" alt="Project 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Natural Language Processing</h5>
+                    <p class="card-text">Implemented NLP models for sentiment analysis and text classification.</p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Add more projects here -->
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="display-4 text-center section-header">Contact</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+          <a href="https://www.linkedin.com/in/rodrigomcalegari/" target="_blank" class="social-btn">
+            <span class="social-logo"><i class="fab fa-linkedin"></i></span>
+          </a>
+          <a href="https://github.com/MilanCalegari" target="_blank" class="social-btn">
+            <span class="social-logo"><i class="fab fa-github"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add links to Bootstrap JavaScript files and any other libraries if needed -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
 </html>
